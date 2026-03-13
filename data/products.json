@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "PP",
+        "price": 12.0,
+        "description": "sdasdasd",
+        "imageUrl": "https://cdn.sanity.io/images/t3ffnogl/production/73e308292a5e05e2fca2fc16018308c6cf6dc373-1500x1000.jpg?w=1000&fm=webp"
+    },
+    {
+        "id": 2,
+        "name": "chma",
+        "price": 13.0,
+        "description": "sfadasda",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgtbIV22PQWNOBTa2KDkSRnm6hujtaGu380g&s"
+    },
+    {
+        "id": 3,
+        "name": "chkae",
+        "price": 14.0,
+        "description": "dasdasda",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeE3KKafWNs8X6au1mPHuGmt4i9DnB13Q9LQ&s"
+    },
+    {
+        "id": 4,
+        "name": "dnsajda",
+        "price": 1245.0,
+        "description": "meowemwoe",
+        "imageUrl": ""
+    },
+    {
+        "id": 5,
+        "name": "Meow Meow ",
+        "price": 1245.0,
+        "description": "meowemwoe",
+        "imageUrl": "https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80"
+    }
+]
