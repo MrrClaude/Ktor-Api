@@ -1,22 +1,20 @@
-# Stage 1: Build the project
+# Stage 1: Build
 FROM eclipse-temurin:21-jdk AS builder
 
-# Set working directory
 WORKDIR /app
 
-# Copy all project files
 COPY . .
 
-# Build the project using Gradle
-RUN ./gradlew installDist --no-daemon
+# Fix permission then build
+RUN chmod +x gradlew && ./gradlew installDist --no-daemon
 
-# Stage 2: Run the app
+# Stage 2: Run
 FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
-# Copy the built app from the builder stage
-COPY --from=builder /app/build/install/ktor-sample /app
+COPY --from=builder /app/build/install/ktor-sample .
 
-# Set entrypoint
-CMD ["bin/ktor-sample"]
+EXPOSE 8080
+
+ENTRYPOINT ["bin/ktor-sample"]
