@@ -3,8 +3,8 @@ WORKDIR /app
 COPY . .
 RUN gradle installDist
 
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY --from=builder /app/build/install/ktor-api /app
+COPY --from=builder /app/build/install/Ktor-Api /app
 
-CMD ["./bin/ktor-api"]
+CMD ["./bin/ktor-sample"]
